@@ -1,0 +1,66 @@
+# ============================================
+# Archive Management System
+# Git Ignore Configuration
+# ============================================
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE / Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Operating System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+
+# PHP dependencies
+/vendor/
+
+# Node dependencies
+/node_modules/
+
+# Composer
+composer.phar
+
+# User uploaded files
+/uploads/*
+!/uploads/.gitkeep
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Database backup files
+*.sql.bak
+*.sql~
+*.dump
+
+# Runtime / cache
+/cache/*
+/tmp/*
+/temp/*
+
+# XAMPP / local development files
+xampp-control.ini
+
+# Local configuration overrides
+config/database.local.php
+config/config.local.php
