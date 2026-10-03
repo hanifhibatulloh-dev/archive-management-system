@@ -1,6 +1,6 @@
 -- ============================================
--- DISARDA CIMAHI - Database Schema
--- Sistem Informasi Dinas Arsip dan Perpustakaan Kota Cimahi
+-- ARCHIVE MANAGEMENT SYSTEM - Database Schema
+-- Software Engineering Academic Project
 -- ============================================
 
 -- Buat Database
@@ -253,17 +253,17 @@ DELIMITER ;
 -- 7. DATA AWAL (Sample Data)
 -- ============================================
 
--- Insert default admin user (password: password)
+-- Insert default demo users (password: password)
 INSERT INTO Users (Username, Password, Nama_Lengkap, Email, Role, Status) VALUES
-('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Administrator', 'admin@disarda.cimahi.go.id', 'Admin', 'Aktif'),
-('operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Operator Arsip', 'operator@disarda.cimahi.go.id', 'Operator', 'Aktif');
+('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Demo Administrator', 'admin@example.com', 'Admin', 'Aktif'),
+('operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Demo Operator', 'operator@example.com', 'Operator', 'Aktif');
 
 -- Insert sample Jenis Arsip
 INSERT INTO Jenis_Arsip (Nama_Jenis_Arsip, Kode_Jenis, Deskripsi_Jenis_Arsip) VALUES
-('Surat Masuk', 'SM', 'Arsip surat yang diterima dari pihak luar'),
-('Surat Keluar', 'SK', 'Arsip surat yang dikirim ke pihak luar'),
-('Peraturan Daerah', 'PERDA', 'Arsip peraturan daerah kota Cimahi'),
-('Keputusan Walikota', 'KEPWAL', 'Arsip keputusan walikota'),
+('Surat Masuk', 'SM', 'Arsip surat yang diterima dari pihak eksternal'),
+('Surat Keluar', 'SK', 'Arsip surat yang dikirim kepada pihak eksternal'),
+('Dokumen Kebijakan', 'DKB', 'Arsip dokumen kebijakan organisasi'),
+('Keputusan Pimpinan', 'KP', 'Arsip keputusan yang diterbitkan oleh pimpinan organisasi'),
 ('Laporan', 'LAP', 'Arsip laporan kegiatan dan keuangan'),
 ('Dokumen Kepegawaian', 'DK', 'Arsip dokumen terkait kepegawaian');
 
@@ -290,10 +290,10 @@ INSERT INTO Penyimpanan (Kode_Lokasi, Lokasi_Penyimpanan, Kapasitas_Penyimpanan,
 
 -- Insert sample Pegawai
 INSERT INTO Pegawai (Nama_Pegawai, NIP, Jabatan, Tugas, Tanggal_Masuk, Email, Status) VALUES
-('Budi Santoso', '198501012010011001', 'Kepala Dinas', 'Memimpin dan mengkoordinasikan kegiatan dinas', '2010-01-01', 'budi.santoso@disarda.cimahi.go.id', 'Aktif'),
-('Siti Nurhaliza', '199001152015012001', 'Kepala Seksi Arsip', 'Mengelola arsip dan dokumentasi', '2015-01-15', 'siti.nurhaliza@disarda.cimahi.go.id', 'Aktif'),
-('Ahmad Dahlan', '199205202018011001', 'Arsiparis', 'Pengolahan dan pelestarian arsip', '2018-01-20', 'ahmad.dahlan@disarda.cimahi.go.id', 'Aktif'),
-('Dewi Lestari', '199308102019012001', 'Arsiparis', 'Pengolahan dan pelestarian arsip', '2019-01-10', 'dewi.lestari@disarda.cimahi.go.id', 'Aktif');
+('Andi Pratama', 'EMP001', 'Archive Manager', 'Mengkoordinasikan pengelolaan arsip', '2024-01-02', 'andi.pratama@example.com', 'Aktif'),
+('Siti Rahma', 'EMP002', 'Archive Supervisor', 'Mengawasi pengelolaan dan klasifikasi arsip', '2024-01-03', 'siti.rahma@example.com', 'Aktif'),
+('Rizky Maulana', 'EMP003', 'Archive Officer', 'Melakukan pengolahan dan penyimpanan arsip', '2024-01-04', 'rizky.maulana@example.com', 'Aktif'),
+('Dewi Anggraini', 'EMP004', 'Archive Officer', 'Melakukan pengolahan dan dokumentasi arsip', '2024-01-05', 'dewi.anggraini@example.com', 'Aktif');
 
 -- Insert sample Roles
 INSERT INTO Roles (Nama_Role, Deskripsi_Role, Hak_Akses) VALUES
@@ -303,13 +303,13 @@ INSERT INTO Roles (Nama_Role, Deskripsi_Role, Hak_Akses) VALUES
 
 -- Insert sample Pengguna
 INSERT INTO Pengguna (Nama_Pengguna, Tipe_Pengguna, Email_Pengguna, Nomor_Telepon, Instansi) VALUES
-('PT. Maju Bersama', 'Eksternal', 'info@majubersama.co.id', '022-12345678', 'PT. Maju Bersama'),
-('Dinas Pendidikan', 'Internal', 'disdik@cimahi.go.id', '022-87654321', 'Dinas Pendidikan Kota Cimahi'),
-('Bagian Umum Setda', 'Internal', 'bagum@cimahi.go.id', '022-11223344', 'Sekretariat Daerah Kota Cimahi');
+('PT. Contoh Digital', 'Eksternal', 'contact@example.com', '000-00000001', 'PT. Contoh Digital'),
+('Divisi Akademik', 'Internal', 'academic@example.com', '000-00000002', 'Example Organization'),
+('Divisi Administrasi', 'Internal', 'administration@example.com', '000-00000003', 'Example Organization');
 
 -- Insert sample Arsip
 INSERT INTO Arsip (Nomor_Arsip, Nama_Arsip, Deskripsi_Arsip, Tanggal_Arsip, Tanggal_Masuk, Status_Arsip, ID_Jenis_Arsip, ID_Klasifikasi_Arsip, ID_Penyimpanan, ID_Pegawai, Tags) VALUES
-('SM/2024/001', 'Surat Permohonan Kerjasama', 'Surat permohonan kerjasama dari PT. Maju Bersama', '2024-01-15', '2024-01-16', 'Aktif', 1, 1, 1, 3, 'kerjasama,permohonan'),
+('SM/2024/001', 'Surat Permohonan Kerjasama', 'Contoh surat permohonan kerjasama dari organisasi eksternal', '2024-01-15', '2024-01-16', 'Aktif', 1, 1, 1, 3, 'kerjasama,permohonan'),
 ('SK/2024/001', 'Surat Balasan Kerjasama', 'Surat balasan atas permohonan kerjasama', '2024-01-20', '2024-01-20', 'Aktif', 2, 1, 1, 3, 'kerjasama,balasan'),
-('PERDA/2024/001', 'Perda Pengelolaan Arsip', 'Peraturan Daerah tentang Pengelolaan Arsip Kota Cimahi', '2024-02-01', '2024-02-05', 'Aktif', 3, 2, 4, 2, 'perda,arsip,pengelolaan'),
+('POL/2024/001', 'Kebijakan Pengelolaan Arsip', 'Dokumen contoh mengenai kebijakan pengelolaan arsip organisasi', '2024-02-01', '2024-02-05', 'Aktif', 3, 2, 4, 2, 'kebijakan,arsip,pengelolaan'),
 ('LAP/2024/001', 'Laporan Keuangan Q1 2024', 'Laporan keuangan triwulan pertama tahun 2024', '2024-04-01', '2024-04-05', 'Aktif', 5, 10, 4, 2, 'laporan,keuangan,q1');
