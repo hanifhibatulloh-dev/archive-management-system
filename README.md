@@ -358,27 +358,115 @@ http://localhost/Archive_Management_System/login.php
 
 ---
 
+---
+
 ## Screenshots
+
+The following screenshots demonstrate the main interfaces and features available in the Archive Management System.
 
 ### Login Page
 
-![Login Page](screenshots/login.png)
+The login page provides authentication access for registered users before entering the Archive Management System.
+
+![Login Page](screenshots/login.jpg)
+
+---
 
 ### Dashboard
 
+The dashboard provides an overview of archive information and quick access to the main modules of the system.
+
 ![Dashboard](screenshots/dashboard.png)
+
+---
 
 ### Archive Management
 
-![Archive Management](screenshots/archive-management.png)
+The Archive Management page is used to view, add, edit, and manage archive records stored in the system.
 
-### Storage Management
+![Archive Management](screenshots/manajemen_arsip.png)
 
-![Storage Management](screenshots/storage-management.png)
+---
 
-### Archive Report
+### Employee Management
 
-![Archive Report](screenshots/report.png)
+The Employee Management page displays employee data associated with archive management activities.
+
+![Employee Management](screenshots/pegawai.png)
+
+---
+
+### Add Employee
+
+The Add Employee page allows authorized users to register new employee information into the system.
+
+![Add Employee](screenshots/tambah_pegawai.png)
+
+---
+
+### Archive Users
+
+The Archive Users page manages internal and external users associated with archive access and archive-related services.
+
+![Archive Users](screenshots/pengguna.png)
+
+---
+
+### Archive Categories
+
+The Archive Categories page is used to manage archive types or categories used within archive records.
+
+![Archive Categories](screenshots/jenis_arsip.png)
+
+---
+
+### Archive Classification
+
+The Archive Classification page provides structured classification information used to organize archive records.
+
+![Archive Classification](screenshots/klasifikasi_arsip.png)
+
+---
+
+### Storage Locations
+
+The Storage Locations page manages physical and server-based archive storage information.
+
+![Storage Locations](screenshots/lokasi_penyimpanan.png)
+
+---
+
+### User Management
+
+The User Management page allows administrators to manage system accounts, user roles, account status, and other account information.
+
+![User Management](screenshots/manajemen_user.png)
+
+---
+
+### Roles & Access Rights
+
+The Roles & Access Rights page displays system roles and the access permissions associated with each role.
+
+![Roles & Access Rights](screenshots/roles_hak_akses.png)
+
+---
+
+### Audit Log
+
+The Audit Log page records selected data changes to support system monitoring and activity traceability.
+
+![Audit Log](screenshots/audit_log.png)
+
+---
+
+### Archive Reports
+
+The Archive Reports page provides reporting and filtering features for reviewing archive information.
+
+![Archive Reports](screenshots/laporan_arsip.png)
+
+---
 
 ---
 
