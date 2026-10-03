@@ -1,3 +1,14 @@
+# Archive Management System
+
+A web-based archive management system developed as an academic Software Engineering project.
+
+The application is designed to support digital archive management through an integrated web-based system, including archive records, classifications, storage locations, employee data, user management, and reporting.
+
+> **Academic Project Disclaimer**  
+> This project was developed solely for academic, educational, and portfolio purposes. It is not an official application, website, or information system of any government institution or organization.
+
+---
+
 ---
 
 ---
@@ -109,17 +120,6 @@ The Archive Reports page provides reporting and filtering features for reviewing
 ![Archive Reports](screenshots/laporan_arsip.jpeg)
 
 ---
-
----
-
-# Archive Management System
-
-A web-based archive management system developed as an academic Software Engineering project.
-
-The application is designed to support digital archive management through an integrated web-based system, including archive records, classifications, storage locations, employee data, user management, and reporting.
-
-> **Academic Project Disclaimer**  
-> This project was developed solely for academic, educational, and portfolio purposes. It is not an official application, website, or information system of any government institution or organization.
 
 ---
 
