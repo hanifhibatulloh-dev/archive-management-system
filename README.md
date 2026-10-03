@@ -189,41 +189,54 @@ Archive_Management_System/
 │   │   └── style.css
 │   │
 │   ├── images/
-│   │   └── archive-bg.jpg
+│   │   └── background_login.jpeg
 │   │
 │   └── js/
-│       └── script.js
+│       └── main.js
 │
 ├── config/
 │   ├── config.php
 │   └── database.php
 │
 ├── includes/
+│   ├── footer.php
 │   ├── header.php
 │   ├── sidebar.php
-│   ├── topbar.php
-│   └── footer.php
+│   └── topbar.php
+│
+├── screenshots/
+│   ├── login.jpeg
+│   ├── dashboard.jpeg
+│   ├── manajemen_arsip.jpeg
+│   ├── pegawai.jpeg
+│   ├── tambah_pegawai.jpeg
+│   ├── pengguna.jpeg
+│   ├── jenis_arsip.jpeg
+│   ├── klasifikasi_arsip.jpeg
+│   ├── lokasi_penyimpanan.jpeg
+│   ├── manajemen_user.jpeg
+│   ├── roles_hak_akses.jpeg
+│   ├── audit_log.jpeg
+│   └── laporan_arsip.jpeg
 │
 ├── sql/
 │   └── archive_management_system.sql
 │
-├── screenshots/
-│   ├── login.png
-│   ├── dashboard.png
-│   ├── archive-management.png
-│   ├── storage-management.png
-│   └── report.png
-│
-├── index.php
-├── login.php
-├── logout.php
 ├── arsip.php
+├── audit_log.php
+├── hapus_arsip.php
+├── index.php
 ├── jenis_arsip.php
 ├── klasifikasi.php
-├── penyimpanan.php
-├── pegawai.php
-├── users.php
 ├── laporan.php
+├── login.php
+├── logout.php
+├── pegawai.php
+├── pengguna.php
+├── penyimpanan.php
+├── profile.php
+├── roles.php
+├── users.php
 │
 ├── .gitignore
 ├── LICENSE
@@ -360,6 +373,8 @@ http://localhost/Archive_Management_System/login.php
 
 ---
 
+---
+
 ## Screenshots
 
 The following screenshots demonstrate the main interfaces and features available in the Archive Management System.
@@ -368,7 +383,7 @@ The following screenshots demonstrate the main interfaces and features available
 
 The login page provides authentication access for registered users before entering the Archive Management System.
 
-![Login Page](screenshots/login.jpg)
+![Login Page](screenshots/login.jpeg)
 
 ---
 
@@ -376,7 +391,7 @@ The login page provides authentication access for registered users before enteri
 
 The dashboard provides an overview of archive information and quick access to the main modules of the system.
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.jpeg)
 
 ---
 
@@ -384,7 +399,7 @@ The dashboard provides an overview of archive information and quick access to th
 
 The Archive Management page is used to view, add, edit, and manage archive records stored in the system.
 
-![Archive Management](screenshots/manajemen_arsip.png)
+![Archive Management](screenshots/manajemen_arsip.jpeg)
 
 ---
 
@@ -392,7 +407,7 @@ The Archive Management page is used to view, add, edit, and manage archive recor
 
 The Employee Management page displays employee data associated with archive management activities.
 
-![Employee Management](screenshots/pegawai.png)
+![Employee Management](screenshots/pegawai.jpeg)
 
 ---
 
@@ -400,7 +415,7 @@ The Employee Management page displays employee data associated with archive mana
 
 The Add Employee page allows authorized users to register new employee information into the system.
 
-![Add Employee](screenshots/tambah_pegawai.png)
+![Add Employee](screenshots/tambah_pegawai.jpeg)
 
 ---
 
@@ -408,7 +423,7 @@ The Add Employee page allows authorized users to register new employee informati
 
 The Archive Users page manages internal and external users associated with archive access and archive-related services.
 
-![Archive Users](screenshots/pengguna.png)
+![Archive Users](screenshots/pengguna.jpeg)
 
 ---
 
@@ -416,7 +431,7 @@ The Archive Users page manages internal and external users associated with archi
 
 The Archive Categories page is used to manage archive types or categories used within archive records.
 
-![Archive Categories](screenshots/jenis_arsip.png)
+![Archive Categories](screenshots/jenis_arsip.jpeg)
 
 ---
 
@@ -424,7 +439,7 @@ The Archive Categories page is used to manage archive types or categories used w
 
 The Archive Classification page provides structured classification information used to organize archive records.
 
-![Archive Classification](screenshots/klasifikasi_arsip.png)
+![Archive Classification](screenshots/klasifikasi_arsip.jpeg)
 
 ---
 
@@ -432,7 +447,7 @@ The Archive Classification page provides structured classification information u
 
 The Storage Locations page manages physical and server-based archive storage information.
 
-![Storage Locations](screenshots/lokasi_penyimpanan.png)
+![Storage Locations](screenshots/lokasi_penyimpanan.jpeg)
 
 ---
 
@@ -440,7 +455,33 @@ The Storage Locations page manages physical and server-based archive storage inf
 
 The User Management page allows administrators to manage system accounts, user roles, account status, and other account information.
 
-![User Management](screenshots/manajemen_user.png)
+![User Management](screenshots/manajemen_user.jpeg)
+
+---
+
+### Roles & Access Rights
+
+The Roles & Access Rights page displays system roles and the access permissions associated with each role.
+
+![Roles & Access Rights](screenshots/roles_hak_akses.jpeg)
+
+---
+
+### Audit Log
+
+The Audit Log page records selected data changes to support system monitoring and activity traceability.
+
+![Audit Log](screenshots/audit_log.jpeg)
+
+---
+
+### Archive Reports
+
+The Archive Reports page provides reporting and filtering features for reviewing archive information.
+
+![Archive Reports](screenshots/laporan_arsip.jpeg)
+
+---
 
 ---
 
